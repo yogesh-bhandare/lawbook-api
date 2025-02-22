@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, status
 from decouple import config
 from getstream import Stream
 from getstream.models import UserRequest
-from app.mootcourt.schemas import StreamUserRequest, StreamUserResponse
+from mootcourt.schemas import StreamUserRequest, StreamUserResponse
 
 router = APIRouter(prefix="/stream", tags=["Stream Token"])
 

@@ -2,7 +2,7 @@ from sqlalchemy import Column, String, DateTime
 from sqlalchemy.dialects.postgresql import UUID
 import uuid
 from datetime import datetime, timezone
-from app.db.connect import Base
+from db.connect import Base
 
 
 # Cases Model
