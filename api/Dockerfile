@@ -6,8 +6,8 @@ COPY requirements.txt ${LAMBDA_TASK_ROOT}
 # Install the specified packages
 RUN pip install -r requirements.txt
 
-# Copy all files in ./app
-COPY ./app ${LAMBDA_TASK_ROOT}
+# Copy all files in ./src
+COPY ./src ${LAMBDA_TASK_ROOT}/src
 
 # Set the CMD to your handler.
-CMD [ "main.handler" ]
+CMD [ "src.main.handler" ]

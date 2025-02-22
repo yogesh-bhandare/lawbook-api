@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from mangum import Mangum
-from mootcourt.routers import router as token_router
-from cases.routers import router as cases_router
+from src.mootcourt.routers import router as token_router
+from src.cases.routers import router as cases_router
 
 app = FastAPI()
 handler = Mangum(app)
